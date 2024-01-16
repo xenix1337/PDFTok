@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PDF Viewer</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div id="fileLoader">
+            <h1>PDF Viewer</h1>
+
+            <div id="pdfFileContainer">
+                <label
+                    for="pdfFile"
+                    style="
+                        cursor: pointer;
+                        padding: 10px;
+                        border: 2px solid #3498db;
+                        border-radius: 5px;
+                        background-color: #3498db;
+                        color: #fff;
+                    "
+                >
+                    Choose a PDF file
+                </label>
+                <input
+                    type="file"
+                    id="pdfFile"
+                    accept=".pdf"
+                    style="display: none"
+                />
+            </div>
+        </div>
+
+        <div id="columns" style="display: none">
+            <div class="videoContainer">
+                <video src="1.mp4" autoplay muted loop></video>
+                <video src="2.mp4" autoplay muted loop></video>
+                <video src="3.mp4" autoplay muted loop></video>
+            </div>
+            <div id="pdfViewer"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
